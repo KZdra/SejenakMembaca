@@ -1,6 +1,11 @@
 import "./globals.css";
 import Link from "next/link";
 
+
+export const metadata = {
+  title: 'Sejenak Membaca',
+}
+ 
 export default function RootLayout({ children }) {
   return (
     <>
@@ -26,7 +31,7 @@ export default function RootLayout({ children }) {
       <li>
        <Link href={"/beritalist"}>Daftar Berita</Link>
       </li>
-      <li><a>About</a></li>
+      <li> <Link href={"/about"}>About</Link></li>
     </ul>
   </div>
   <div className="mr-1 navbar-end">

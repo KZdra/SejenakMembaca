@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 function Card({Title , Content , ImgUrl , BeritaHref}) {
   return (
-    <div className="shadow-xl card lg:card-side bg-base-100">
+    <div className="shadow-2xl card lg:card-side bg-base-100">
     <figure><img src={ImgUrl} alt="Album"/></figure>
     <div className="card-body">
       <h2 className="card-title">{Title}</h2>

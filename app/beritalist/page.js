@@ -1,5 +1,9 @@
 import React from 'react'
 import Card from '../components/card'
+
+export const metadata = {
+  title: 'Berita | Sejenak Membaca',
+}
 function BeritaList() {
   return (
     <div className='container p-5 m-auto'>
