@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
       <li><Link href={'/'}>Home</Link></li>
       <li><Link href={"/beritalist"}>Daftar Berita</Link></li>
-      <li><a>About</a></li>
+      <li> <Link href={"/about"}>About</Link></li>
       </ul>
     </div>
-    <a className="text-xl btn btn-ghost">Sejenak Baca</a>
+    <Link href={'/'} className="text-xl btn btn-ghost">Sejenak Baca</Link>
   </div>
   <div className="hidden navbar-center lg:flex">
     <ul className="px-1 menu menu-horizontal">
@@ -44,6 +44,11 @@ export default function RootLayout({ children }) {
   
 </div>
     {children}
+    <footer className="p-4 footer footer-center bg-base-300 text-base-content">
+  <aside>
+    <p>Ramadhan-Code-Fest 2024</p>
+  </aside>
+</footer>
     </body>
   </html>
   </>
