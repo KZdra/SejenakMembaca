@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import {faNutritionix} from '@fortawesome/free-brands-svg-icons';
+import { Suspense } from 'react'
+import Loading from '@/app/loading'
 function Berita1() {
   return (
+    <>
+    <Suspense  fallback={<Loading/>}>
     <div className='container max-w-full max-h-full p-5 mx-auto'>
     <div className='flex items-center justify-center'>
     <div className='text-3xl font-bold text-center'>
@@ -61,8 +64,39 @@ Di antara berkah sahur adalah selain memberikan asupan kepada umat Islam yang be
 Artinya: "Makan sahurlah kalian karena sesungguhnya di dalam sahur itu terdapat berkah." (HR Bukhari)
 
     </p>
+    <br />
+    <p>Hadits ini dinukil dari Abu Sa'id Al Khudri RA yang menyebut bahwa Rasulullah SAW pernah berkata, Allah SWT dan para malaikat bersalawat atas orang-orang yang bersahur,</p><br />
+    <span className='items-end text-2xl font-bold'>السُّحُورُ أَكْلَةٌ بَرَكَةٌ فَلَا تَدَعُوهُ وَلَوْ أَنْ يَجْرَعَ أَحَدُكُمْ جَرْعَةً مِنْ مَاءٍ فَإِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى الْمُتَسَحِّرِينَ</span><br /><br />
+    <p>
+    Artinya: "Bersahur itu adalah suatu keberkahan, maka janganlah kamu meninggalkannya walaupun hanya dengan seteguk air. Karena Allah SWT dan para malaikat bersalawat atas orang-orang yang bersahur (makan sahur)." (HR Ahmad)
+    </p>
+    <br />
+<div className="text-2xl font-bold">
+        <h1>Waktu Sahur</h1>
+    </div>
+    <br />
+    <p>
+    Masih dikutip dari buku Mukjizat Puasa, termasuk sunah untuk mengakhirkan sahur. Hal ini berguna untuk memendekkan waktu lapar dan menahan diri. Allah SWT berfirman dalam surah Al-Baqarah ayat 187,
+    </p>
+    <br />
+    <span className='text-2xl font-bold'>
+    وَكُلُوا وَاشْرَبُوا حَتَّى يَتَبَيَّنَ لَكُمُ الْخَيْطُ الْأَبْيَضُ مِنَ الْخَيْطِ الْأَسْوَدِ مِنَ الْفَجْرِ ثُمَّ أَتِمُّوا الصِّيَامَ إِلَى اللَّيْلِ
+    </span>
+    <br />
+    <br />
+    <p>
+    Artinya: "Dan makan minumlah hingga terang bagimu benang putih dari benang hitam, yaitu fajar. Kemudian sempurnakanlah puasa itu sampai (datang) malam."
+    </p>
+    <br />
+    <p>
+    Ayat di atas memberi arti diperbolehkannya makan hingga fajar dengan jelas. Barang siapa yang meragukan apakah fajar sudah terbit atau belum, boleh makan dan minum hingga mendapatkan keyakinan.
+    </p>
+    <br />
+    <p>Aisyah RA meriwayatkan bahwa pada suatu malam Bilal RA mengumandangkan azan. Lalu Rasulullah SAW bersabda, "Makan dan minumlah hingga Ibn Ummi Maktum azan, karena dia tidak mengumandangkan azan hingga terbit fajar."</p>
     </div>
     </div>
+    </Suspense>
+    </>
   )
 }
 

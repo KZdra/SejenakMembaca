@@ -8,7 +8,9 @@ export const metadata = {
 
 function About() {
   return (
-    <div className='container p-5 m-auto'>
+    <>
+    <div className='container h-screen p-5 mx-auto'>
+    <div className=''>
        <div className='text-3xl font-bold text-center'>
     <h2>About</h2>
     </div>
@@ -35,6 +37,9 @@ function About() {
     </div>
    
     </div>
+    </div>
+    
+    </>
   )
 }
 

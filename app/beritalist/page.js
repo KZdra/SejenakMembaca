@@ -22,9 +22,9 @@ function BeritaList() {
          BeritaHref = "beritalist/1"
       />
         <Card 
-        Title = "berita2"
-         Content = "lorem ipsumdolsit"
-         ImgUrl = "https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+        Title = "Bolehkah Niat Puasa saat Imsak? Ini Batas Waktunya"
+         Content = "Setiap ibadah harus diawali dengan niat, termasuk dalam berpuasa. Lantas, kapan batas waktu berniat dalam puasa"
+         ImgUrl = "/images/b2.jpg"
          BeritaHref = "beritalist/2"
       />
       </Suspense>
